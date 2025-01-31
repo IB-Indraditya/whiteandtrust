@@ -40,6 +40,10 @@
     padding: 30px;
     text-align: center;
     transition: transform 0.3s ease-in-out;
+    min-height: 200px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
 }
 .carrer:hover{
     transform: scale(1.05);
