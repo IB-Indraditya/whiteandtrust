@@ -2,6 +2,25 @@
 *{
     font-family: "Montserrat", serif;
 }
+.hero{
+    margin: 0 auto;
+    max-width: 1700px;
+    min-width: 240px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    align-self: flex-start;
+    flex-direction: column;
+}
+.navbar{
+    width: 100%;
+    margin: auto;
+    box-shadow: none;
+}
+.carousel{
+    margin: 0 auto;
+    width: 100%;
+}
 .montnormal{
   font-family: "Montserrat", serif;
   font-optical-sizing: auto;
