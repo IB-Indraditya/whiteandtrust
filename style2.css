@@ -45,6 +45,35 @@
     place-items: center;
     overflow: hidden;
 }
+p, h5{
+    overflow-wrap: break-word;
+}
+@media (min-width: 992px) {
+    .col-lg-6 {
+        flex: 0 0 auto;
+        width: 50%;
+        height: 500px !important;
+    }
+    .col-lg-6 img{
+        height: 100% !important;
+    }
+}
+@media (max-width: 500px) {
+    .ftcontent{
+        flex-direction: column;
+    }
+    .ftext{
+        margin-left: 0 !important;
+    }
+    .copyright{
+        margin: 0;
+    }
+    .ftext a{
+        display: block;
+        margin: 10px 0;
+    }
+}
+
 .carrer:hover{
     transform: scale(1.05);
 }

@@ -73,6 +73,9 @@
     background-color: #b02a2a !important;
     color: white;
 }
+.copyright{
+    margin: 0 10px;
+}
 .gray{
     background-color: rgba(0, 0, 0, 0.6);
 }
