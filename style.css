@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --lightgray1: #edf2f4;
+}
 *{
     font-family: "Montserrat", serif;
 }
@@ -16,6 +20,9 @@
     width: 100%;
     margin: auto;
     box-shadow: none;
+}
+#navbar-content li{
+    font-weight: bold;
 }
 .carousel{
     margin: 0 auto;
@@ -45,16 +52,25 @@
     object-fit: cover;
 }
 .wntbtn{
-    padding: 10px 20px;
+    padding: 12px 15px;
     background-color: #b02a2a;
     border: none;
     border-radius: 0;
-    border-top-right-radius: 1.509rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
     color: white;
+    min-width: 200px;
+}
+.colordarkred{
+    color: #b02a2a !important;
 }
 .gray{
-    background-color: rgba(0, 0, 0, 0.322);
+    background-color: rgba(0, 0, 0, 0.6);
 }
-.primarycolor{
+.card{
+    background-color: var(--lightgray1);
+    border: none;
+}
+/* .primarycolor{
     
-}
+} */
