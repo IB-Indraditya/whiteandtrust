@@ -49,3 +49,12 @@
     font-size: 40px;
     color: #000;
 }
+p a{
+    text-decoration: none;
+    color: orange;
+    margin: 0 10px;
+}
+.fa-brands{
+    color: white;
+    margin: auto 10px;
+}
