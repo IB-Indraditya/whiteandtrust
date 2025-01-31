@@ -47,13 +47,13 @@
     border-radius: 7px;
     border: none;
 }
+/* .carousel-inner{
+    max-height: 100v;
+} */
 .heroCarouselImg{
+    /* min-height: 100vh; */
     max-height: 100vh;
     object-fit: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
 }
 .wntbtn{
     padding: 12px 15px;
@@ -68,6 +68,10 @@
 .colordarkred{
     color: #b02a2a !important;
     font-weight: bold;
+}
+.bg-darkred{
+    background-color: #b02a2a !important;
+    color: white;
 }
 .gray{
     background-color: rgba(0, 0, 0, 0.6);
