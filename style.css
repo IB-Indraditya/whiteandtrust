@@ -63,6 +63,7 @@
 }
 .colordarkred{
     color: #b02a2a !important;
+    font-weight: bold;
 }
 .gray{
     background-color: rgba(0, 0, 0, 0.6);
