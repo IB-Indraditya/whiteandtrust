@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Montserrat", serif;
+}
+.montnormal{
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+}
+.montmedium{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: medium;
+}
+.montbold{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+}
+.dropdown-menu{
+    border-radius: 7px;
+    border: none;
+}
+.heroCarouselImg{
+    max-height: 500px;
+    object-fit: cover;
+}
+.wntbtn{
+    padding: 10px 20px;
+    background-color: #b02a2a;
+    border: none;
+    border-radius: 0;
+    border-top-right-radius: 1.509rem;
+    color: white;
+}
+.gray{
+    background-color: rgba(0, 0, 0, 0.322);
+}
+.primarycolor{
+    
+}
