@@ -48,11 +48,25 @@
     border: none;
 }
 /* .carousel-inner{
-    max-height: 100v;
+    height: 800px;
 } */
+.carousel-inner .carousel-item{
+    height: 800px;
+}
+@media (max-width: 500px){
+    .carousel-inner .carousel-item{
+        height: 400px;
+    }
+}
+@media (max-width: 500px){
+    .carousel-inner .carousel-caption{
+        height: 400px;
+    }
+}
 .heroCarouselImg{
+    height: 100%;
     /* min-height: 100vh; */
-    max-height: 100vh;
+    /* max-height: 100vh; */
     object-fit: cover;
 }
 .wntbtn {
@@ -239,6 +253,75 @@ a{
             flex: 0 0 auto;
             width: 50%;
             max-height: 400px !important;
+        }
+    }
+    @media (max-width: 1400px) {
+        .col-lg-6 {
+            flex: 0 0 auto;
+            width: 50%;
+            min-height: 600px !important;
+            max-height: none !important;
+        }
+        .visioncore{
+            transform: scale(1, .7);
+        }
+        .icon {
+            width: 210px;
+            font-size: 25px !important;
+            clip-path: polygon(0px 0px, calc(100% - 0px) 0px, 100% 20px, 100% calc(100% - 40px), calc(100% - 20px) 100%, 0px 100%) !important;
+            overflow-wrap: break-word;
+        }
+        .ftco-section{
+            padding: 0em;
+        }
+    }
+    @media (max-width: 1000px){
+        .caredoc, .caretext{
+            width: 100%;
+            min-height: 400px !important;
+        }
+        .caredoc{
+            margin-bottom: 20px;
+        }
+        
+    }
+    @media(max-width: 800px){
+        .col-sm-3{
+            width: 50%;
+        }
+        .ftco-section{
+            padding: 7em 0;
+        }
+    }
+    @media (max-width: 700px) {
+        .col-lg-6 {
+            flex: 0 0 auto;
+            /* width: 50%; */
+            min-height: 400px !important;
+            max-height: none !important;
+        }
+        .visioncore{
+            transform: scale(1, 1);
+        }
+        .col-lg-6{
+            width: 100%;
+        }
+        .icon {
+            width: 210px;
+            font-size: 25px !important;
+            clip-path: polygon(40px 0px, calc(100% - 0px) 0px, 100% 20px, 100% calc(100% - 40px), calc(100% - 20px) 100%, 0px 100%) !important;
+            overflow-wrap: break-word;
+        }
+        .col-sm-3{
+            width: 100%;
+            margin: 20px auto;
+        }
+        .caredoc, .caretext{
+            width: 100%;
+            min-height: 100% !important;
+        }
+        .container .p-sign{
+            padding: 1rem 0 !important;
         }
     }
 .bglineara{
