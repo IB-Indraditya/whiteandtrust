@@ -286,13 +286,20 @@ a{
         .col-sm-3{
             width: 50%;
         }
-        
+        .visionclass{
+            min-height: 0 !important;
+            width: 100% !important;
+        }
     }
     @media(max-width: 800px){
         .ftco-section{
             padding: 7em 0;
         }
-        
+        .visionclass{
+            min-height: 0 !important;
+            width: 100%;
+            transform: none;
+        }
     }
     @media (max-width: 700px) {
         .col-lg-6 {
