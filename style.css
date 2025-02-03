@@ -298,7 +298,7 @@ a{
         .visionclass{
             min-height: 0 !important;
             width: 100%;
-            transform: none;
+            transform: none !important;
         }
     }
     @media (max-width: 700px) {
