@@ -283,12 +283,11 @@ a{
         .caredoc{
             margin-bottom: 20px;
         }
-        
-    }
-    @media(max-width: 800px){
         .col-sm-3{
             width: 50%;
         }
+    }
+    @media(max-width: 800px){
         .ftco-section{
             padding: 7em 0;
         }
