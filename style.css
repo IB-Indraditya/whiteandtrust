@@ -51,7 +51,7 @@
     height: 800px;
 } */
 .carousel-inner .carousel-item{
-    height: 800px;
+    height: 750px;
 }
 @media (max-width: 500px){
     .carousel-inner .carousel-item{
