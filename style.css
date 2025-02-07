@@ -343,7 +343,7 @@ a{
 .vicon{
     color: white;
 }
-.location, .communicate{
+.communicate{
     width: 320px
 }
 .communicate, .contactus{
@@ -436,4 +436,12 @@ a{
 }
 .item:hover img{
     transform: scale(1.1);
+}
+@media (max-width: 700px){
+    .item{
+        /* min-width: 250px; */
+    }
+    .bg-products{
+        transform: scale(1);
+    }
 }
