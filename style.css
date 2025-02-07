@@ -394,7 +394,7 @@ a{
 
 }
 .drophead:hover .dropdown{
-    box-shadow: 0 0 4px .1px grey;
+    box-shadow: 0 0 2px .1px grey;
     max-height: 400px;
     transition: 1s max-height ease-in-out;
 }
