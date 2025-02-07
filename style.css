@@ -353,7 +353,48 @@ a{
     display: block;
 }
 @media(max-width: 600px){
-    .loaction, .communicate{
+    .location, .communicate{
         width: auto
     }
+}
+.dropcontent{
+    display: block;
+    position: absolute;
+    max-height: 0;
+    /* overflow-y: hidden; */
+    transition: 1s;
+}
+.dropdown{
+    /* display: block;
+    position: absolute;*/
+    box-shadow: 0 0 4px 0px grey;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: 1s ease-in-out;
+}
+.dropdown .drop{
+    margin: auto;
+    font-size: small;
+    padding: 5px 10px;
+    width: 250px;
+    color: darkslategrey;
+}
+.dropbr{
+    transform: translateY(0px);
+    display: block;
+    padding: 10px;
+}
+.drop:hover{
+    color: #b02a2a;;
+}
+.drophead:hover .dropcontent{
+    display: block;
+    max-height: 400px;
+    /* border: solid 1px grey; */
+
+}
+.drophead:hover .dropdown{
+    box-shadow: 0 0 4px .1px grey;
+    max-height: 400px;
+    transition: 1s max-height ease-in-out;
 }
