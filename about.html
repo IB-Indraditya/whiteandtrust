@@ -11,7 +11,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <style>
+      @media (min-width: 992px) {
+        .col-lg-6 {
+            flex: 0 0 auto;
+            width: 50%;
+            max-height: none !important;
+        }
+    }
+    @media (max-width: 1400px) {
+        .col-lg-6 {
+            flex: 0 0 auto;
+            width: 50%;
+            min-height: 0 !important;
+            max-height: none !important;
+        }
+      }
+    </style>
   </head>
   <body>
       <!-- navbar -->
@@ -36,7 +52,7 @@
                 <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">About</a>
                     <ul class="dropdown-menu shadow p-sm-0 p-lg-3 mt-sm-0 mt-lg-2">
-                      <li><a class="dropdown-item" href="our_company.html">Our Company</a></li>
+                      <li><a class="dropdown-item" href="about.html">Our Company</a></li>
                       <li><a class="dropdown-item" href="blog.html">Leadership</a></li>
                       <li class="dropend">
                         <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">Corporate Responsibility</a>
@@ -114,7 +130,7 @@
                 </li> -->
                 <!-- About -->
                 <li class="nav-item">
-                  <a class="nav-link" href="our_company.html">ABOUT</a>
+                  <a class="nav-link" href="about.html">ABOUT</a>
                 </li>
                 <!-- Product Range -->
                 <li class="nav-item drophead">
@@ -172,10 +188,10 @@
         </section>
            
       
-      <section class="bg-body-tertiary w-100 mt-5 mb-5">
+      <section class="bg-body-tertiary w-100 py-3">
           <div class="container">
             <div class="row">
-              <div class="col-lg-12 p-3">
+              <div class="col-lg-12 p-2">
                 <p class="mt-2" style="text-align: justify;"> White&Trust Pharmaceutical (INDIA) PVT.LTD is committed to assembling a dedicated and skilled team of professionals to offer customers the best solutions tailored to their needs. Our collaborative approach, backed by a robust quality management system, has positioned White&Trust Pharmaceutical (INDIA) PVT.LTD as a reputable name in the clinical laboratory products industry.</p>
                 <p class="mt-2" style="text-align: justify;">As one of India's fastest-growing diagnostic companies,we take pride in our state-of-the-art manufacturing setup, ensuring consistent quality at highly competitive prices. With extensive experience in the diagnostics sector, we provide cutting-edge products, including semi-auto analyzers, biochemistry analyzers, dry bath incubators, ELISA strip readers, and ELISA plate washers.</p>                 
                 <p class="mt-2" style="text-align: justify;">Our unwavering dedication drives us to continually enhance our products, positively impacting public health and exceeding customer expectations. By refining our manufacturing processes for greater efficiency and strengthening our Research & Development division, we ensure that White&Trust Pharmaceutical (INDIA) PVT.LTD launches high-quality innovations in the industry year after year.</p>
@@ -184,22 +200,22 @@
           </div>
       </section>
     </div>
-    <section class="bg-body-tertiary w-100 mt-5 mb-5">
+    <section class="bg-body-tertiary w-100 mt-0 py-4">
           <div class="container">
             <div class="row align-items-stretch">
-              <div class="col-lg-6 p-3">
+              <div class="col-lg-6 p-2">
                 <img  src="https://5.imimg.com/data5/SELLER/Default/2021/12/IO/VK/DD/15792977/commercial-landscaping-service.jpg" class="img-fluid ">
               </div>
               <div class="col-lg-6 p-3 ">
-                <h2 class="text-start mt-4 mb-2">Our Mission</h2>
+                <h2 class="text-start mt-2 mb-0">Our Mission</h2>
                 <p class=" mt-2" style="text-align: justify;">Our primary objective is to deliver top-quality instruments with enhanced functionality, driving us toward our ultimate goal of **"Customer Satisfaction."** We uphold exceptional quality standards for our valued clients by ensuring that all audit reports align with our stringent benchmarks.</p>
-                <button class="wntbtn montbold mt-4 mb-4 " style="width: 100px; margin-left: 0%;">View All</button>
+                <button class="wntbtn montbold mt-4 mb-2 " style="width: 100px; margin-left: 0%;">View All</button>
               </div>
             </div>
           </div>
     </section>
 
-    <section class="bg-body-tertiary w-100 mt-5 mb-5">
+    <section class="bg-body-tertiary w-100 mt-0 py-4">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 p-3 ">
@@ -216,7 +232,7 @@
     <!-- quality standard -->
     <div class="hero">
     <section class="bg-body-tertiary w-100">
-      <div class="container mt-4 mb-3">
+      <div class="container mt-0 py-3 mb-3">
           <div class="row p-3">
               <div class="col-lg-6"> 
                   <img class="loader-img" src="https://img.freepik.com/free-photo/close-up-female-engineer-hand-controling-robot-arm-welding-machine-industrial-40-modern-factory-backgroundsmart-female-engineer-inspect-quality-control-factory_609648-856.jpg?t=st=1738917311~exp=1738920911~hmac=914a8bc421f538e26be8232720c03bbbfef8f20d9768b8c2195208c5ee44798c&w=1060" width="100%" height="auto" alt loading="eager">
@@ -233,10 +249,10 @@
     </div>
     <!-- form -->
     <div class="hero">
-    <section class="bgform">
+    <section class="bgform py-5">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 mt-5 mb-5 p-5 rounded-1" style="background: rgba(176, 106, 26, 0.5);">
+          <div class="col-lg-12 mt-2 mb-2 p-5 rounded-1" style="background: rgba(176, 106, 26, 0.5);">
             <h1 class="text-center fw-bold pt-2 pb-2" style="color:white;">If you have any inquiries about our products or services,</h1>
             <h5 class="text-center fw-bold pt-2" style="color: white;">please feel free to contact us. We’re here to assist you.</h5>
             <form class="row g-3 mt-4 mb-4">
@@ -269,7 +285,7 @@
     
 
      <!-- footer -->
-    <div class="hero mt-5">
+    <div class="hero mt-0">
       <footer class="w-100 bg-dark p-4 d-flex justify-content-center">
           <section class="footex m-0 p-2 d-flex justify-content-center flex-column w-100 ">
             <section class="fthead m-0 d-flex justify-content-between w-100" style="margin: auto;">
