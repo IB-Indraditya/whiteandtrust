@@ -11,6 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- jQuery (Required for Owl Carousel) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
   </head>
   <body>
@@ -118,15 +125,22 @@
                     <a class="nav-link" href="about.html">ABOUT</a>
                   </li>
                   <!-- Product Range -->
-                  <li class="nav-item">
+                  <li class="nav-item drophead">
                     <!-- <a class="nav-link" href=""></a> -->
-                    <a class="nav-link dropdown-toggle" href="javascript:void(0);" data-bs-toggle="dropdown" data-bs-auto-close="outside">PRODUCT RANGE</a>
-                      <ul class="dropdown-menu shadow p-sm-0 p-lg-3 mt-sm-0 mt-lg-2 gap-3">
-                        <li><a class="dropdown-item" href="#">Overview</a></li>
-                        <li><a class="dropdown-item" href="blog.html">Financial Results</a></li>
-                        <li><a class="dropdown-item" href="blog.html">Investor Events</a></li>
-                        <li><a class="dropdown-item" href="blog.html">Investor Contact</a></li>
-                      </ul>
+                    <a class="nav-link" href="javascript:void(0);">PRODUCT RANGE</a>
+                    <section class="dropcontent">
+                      <span class="dropbr bg-light"></span>
+                      <div class="dropdown bg-light px-3">
+                        <a href=""><p class="drop">Dry Eye Management </p></a>
+                        <a href=""><p class="drop">Anti-Aller ic </p></a>
+                        <a href=""><p class="drop">Anti-Viral </p></a>
+                        <a href=""><p class="drop">Antibiotic & Combinations</p></a>
+                        <a href=""><p class="drop">Steroid</p></a>
+                        <a href=""><p class="drop">Anti-Glaucoma Range</p></a>
+                        <a href=""><p class="drop">Antioxidant</p></a>
+                        <a href=""><p class="drop">NSAID Therapy</p></a>
+                      </div>
+                    </section>
                   </li>
                   <!-- Specificatin corner -->
                   <li class="nav-item">
@@ -139,7 +153,7 @@
                   </li>
                   <!-- contactus -->
                   <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACT US</a>
+                    <a class="nav-link" href="contact_us.html">CONTACT US</a>
                   </li>
               </ul>
               <form class="d-flex ms-auto">
@@ -317,9 +331,9 @@
                       </div>
                   </div>
               </div> -->
-    </div>
-    </div>
-    </section>
+          </div>
+     </div>
+      </section>
 
       <!-- <section class="p-4 bg-white mt-5 flex d-flex justify-content-center flex-column" style="width: 100%;">
         <button class="wntbtn montbold mb-4" style="width: 100px; margin: auto;">View All</button>
@@ -494,6 +508,40 @@
         </section>
       </div>
       <div class="hero">
+        <section class="bg-body-tertiary py-4 w-100">
+          <div class="section_row clearfix clientlisting m-4 py-4">
+              <div class="section_inner">
+                  <div class="at-fancy-heading-v1 textcenter">
+                      <h2 style="font-weight:300;">Our <span style="color: #b02a2a;font-weight:normal;">Products</span></h2>
+                      <span class="at-fancy-heading-v1-sep"></span>
+                  </div>
+                  
+                  <!-- Owl Carousel Wrapper -->
+                  <div class="owl-carousel owl-theme" id="clients-carousel">
+                      <!-- Client Logos -->
+                      <div class="item"><img src="images/product1.png" alt="SRL Diagnostics"></div>
+                      <div class="item"><img src="images/product2.png" alt="Indian Coast Guard"></div>
+                      <div class="item"><img src="images/product3.png" alt="Central Reserve Police Force"></div>
+                      <div class="item"><img src="images/product4.png" alt="Nuclear Power Corporation of India Limited"></div>
+                      <div class="item"><img src="images/product5.png" alt="DMH"></div>
+                      <div class="item"><img src="images/product6.png" alt="P D Hinduja Hospital"></div>
+                      <div class="item"><img src="images/product7.png" alt="Nepal Army"></div>
+                      <div class="item"><img src="images/product8.png" alt="GMERS"></div>
+                      <div class="item"><img src="images/product9.png" alt="GMSCL"></div>
+                      <div class="item"><img src="images/product10.png" alt="JKMSCL"></div>
+                      <div class="item"><img src="images/product11.png" alt="MPPHSCL"></div>
+                      <div class="item"><img src="images/product12.png" alt="Ministry of Defence"></div>
+                  </div>
+          
+                  <div class="viewmore text-center mt-5">
+                      <strong><a class="wntbtn" href="javascript:void(0);" title="View All">View All</a></strong>
+                  </div>
+              </div>
+          </div>
+               
+        </section>
+      </div>
+      <div class="hero">
         <footer class="w-100 bg-dark p-4 d-flex justify-content-center">
             <section class="footex m-0 p-2 d-flex justify-content-center flex-column w-100 ">
               <section class="fthead m-0 d-flex justify-content-between w-100" style="margin: auto;">
@@ -561,6 +609,25 @@
     </noscript>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+      $(document).ready(function(){
+          $("#clients-carousel").owlCarousel({
+              loop: true,  // Infinite scrolling
+              margin: 20,  // Space between items
+              autoplay: true,  // Enables automatic scrolling
+              autoplayTimeout: 3000,  // Time between slides (3 seconds)
+              autoplayHoverPause: true,  // Pause on hover
+              nav: false,  // Hide navigation arrows
+              dots: false,  // Hide navigation dots
+              responsive: {
+                  0: { items: 2 },  // 2 logos on small screens
+                  600: { items: 3 },  // 3 logos on medium screens
+                  1000: { items: 5 }  // 5 logos on large screens
+              }
+          });
+      });
+      </script>
+      
 
   </body>
 </html>
