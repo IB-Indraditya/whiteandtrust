@@ -343,7 +343,7 @@ a{
 .vicon{
     color: white;
 }
-.location, .communicate{
+.communicate{
     width: 320px
 }
 .communicate, .contactus{
@@ -383,6 +383,70 @@ a{
     transform: translateY(0px);
     display: block;
     padding: 10px;
+}
+@media(max-width: 1200px){
+    .dropbr{
+        visibility: collapse;
+        padding-top: 8px;
+    }
+}
+@media (max-width: 992px){
+    .navbar{
+        padding: 0 !important;
+    }
+    .container{
+        padding: 0;
+        min-width: 100%;
+        overflow: hidden;
+    }
+    .navbar-brand{
+        padding: 30px !important;
+    }
+    .navbar-toggler{
+        margin: 0 20px;
+    }
+    .navbar-collapse{
+        
+        background: #414040;
+        padding: 20px 40px;
+        padding-left: 40px;
+    }
+    .nav-link{
+        color: white;
+        border-bottom: dotted 2px grey;
+        padding: 20px 0;
+    }
+    .nav-link:hover{
+        color: cornflowerblue;
+    }
+    .dropcontent{
+        position: relative;
+        background-color: #414040;
+    }
+    .dropdown{
+        box-shadow: none !important;
+        background-color: #414040 !important;
+        transform: translateX(-20px);
+    }
+    .drop{
+        margin: unset !important;
+        color: white !important;
+        font-size: 15px !important;
+        font-weight: lighter !important;
+        padding: 20px 0;
+    }
+    .drop:hover{
+        color: #c7390d !important;
+    }
+    a[href="contact_us.html"]{
+        border-radius: 1px !important;
+        transform: translateY(10px) !important;
+        margin: 10px 0;
+    }
+}
+a[href="contact_us.html"]{
+    /* transform: translateY(0) !important; */
+    border-radius: 2px !important;
 }
 .drop:hover{
     color: #b02a2a;;
@@ -436,4 +500,12 @@ a{
 }
 .item:hover img{
     transform: scale(1.1);
+}
+@media (max-width: 700px){
+    .item{
+        /* min-width: 250px; */
+    }
+    .bg-products{
+        transform: scale(1);
+    }
 }
