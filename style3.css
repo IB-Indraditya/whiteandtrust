@@ -24,6 +24,9 @@
 #navbar-content li{
     font-weight: bold;
 }
+.nav-link{
+    margin: auto 10px;
+}
 .carousel{
     margin: 0 auto;
     width: 100%;
@@ -401,6 +404,7 @@ a{
     }
     .navbar-brand{
         padding: 30px !important;
+        padding-right: 0 !important;
     }
     .navbar-toggler{
         margin: 0 20px;
@@ -507,5 +511,11 @@ a[href="contact_us.html"]{
     }
     .bg-products{
         transform: scale(1);
+    }
+    .ourvisionrow{
+        flex-direction: column-reverse;
+    }
+    .col-lg-6{
+        min-height: 0 !important;
     }
 }

@@ -25,7 +25,6 @@
      <div class="hero">
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top p-3 w-100">
           <div class="container">
-            
             <a class="navbar-brand" href="index.html">
               <img src="W___T_copy.png" alt="Logo" height="40">
             </a>
@@ -127,18 +126,26 @@
                   <!-- Product Range -->
                   <li class="nav-item drophead">
                     <!-- <a class="nav-link" href=""></a> -->
-                    <a class="nav-link" href="javascript:void(0);">PRODUCT RANGE</a>
+                    <a class="nav-link" href="product.html">PRODUCT RANGE</a>
                     <section class="dropcontent">
                       <span class="dropbr bg-light"></span>
                       <div class="dropdown bg-light px-3">
-                        <a href=""><p class="drop">Dry Eye Management </p></a>
-                        <a href=""><p class="drop">Anti-Aller ic </p></a>
-                        <a href=""><p class="drop">Anti-Viral </p></a>
-                        <a href=""><p class="drop">Antibiotic & Combinations</p></a>
-                        <a href=""><p class="drop">Steroid</p></a>
-                        <a href=""><p class="drop">Anti-Glaucoma Range</p></a>
-                        <a href=""><p class="drop">Antioxidant</p></a>
-                        <a href=""><p class="drop">NSAID Therapy</p></a>
+                        <a href="dryeyemgmt.html">
+                          <p class="drop">Dry Eye Management</p>
+                          <div class="dropdn d-block">
+                            <a href="">dropdndrop1</a>
+                            <a href="">dropdndrop1</a>
+                            <a href="">dropdndrop1</a>
+                            <a href="">dropdndrop1</a>
+                          </div>
+                        </a>
+                        <a href="antiallergic.html"><p class="drop">Anti-Allergic </p></a>
+                        <a href="antiaviral.html"><p class="drop">Anti-Viral </p></a>
+                        <a href="antibiotic.html"><p class="drop">Antibiotic & Combinations</p></a>
+                        <a href="steroid.html"><p class="drop">Steroid</p></a>
+                        <a href="antiglaucoma.html"><p class="drop">Anti-Glaucoma Range</p></a>
+                        <a href="antioxidant.html"><p class="drop">Antioxidant</p></a>
+                        <a href="nsaid.html"><p class="drop">NSAID Therapy</p></a>
                       </div>
                     </section>
                   </li>
@@ -152,9 +159,9 @@
                       <a class="nav-link" href="Career.html">CAREER</a>
                   </li>
                   <!-- contactus -->
-                  <li class="nav-item">
+                  <!-- <li class="nav-item">
                     <a class="nav-link" href="contact_us.html">CONTACT US</a>
-                  </li>
+                  </li> -->
               </ul>
               <form class="d-flex ms-auto">
                   <!-- <form class="d-flex ms-auto"> -->
@@ -249,7 +256,7 @@
       </div>
            
     </section>
-    <section class="p-5 bg-white mt-0 flex d-flex justify-content-center flex-column" style="width: 100%;">
+    <section class="p-2 bg-white mt-0 flex d-flex justify-content-center flex-column" style="width: 100%;">
       <!-- <button class="wntbtn montbold mb-4" style="width: 100px; margin: auto;">View All</button> -->
       <h2 class="mont mt-5 mb-4 text-center">About Us</h2>
       <h5 class="mt-3 mb-0" style="line-height: 2rem; margin: 0 auto; max-width: 1280px;">
@@ -467,8 +474,8 @@
                         <img class="loader-img" src="https://www.healthcarefinancenews.com/sites/healthcarefinancenews.com/files/styles/companion_top/public/PatientinBed_4.jpg?itok=xwccW89L" width="100%" height="auto" alt loading="eager">
                     </div>
                     <div class="col-lg-6 caretext">
-                        <h1 class="text-start fw-bold">Clinical Trial Innovation: Putting the Patient First in Clinical Trial Design</h1>
-                        <p class="text-start">Learn how White And Trust is making clinical trials more patient-friendly with easier enrollment, focus on patient experience, and data return initiatives.White And Trust is transforming clinical trials by making them more patient-friendly and accessible. Traditional trials often involve complex enrollment and limited patient engagement, creating barriers to participation. To address this, White And Trust has simplified enrollment, making it easier for individuals to join trials.
+                        <h1 class="text-start fw-bold px-1">Clinical Trial Innovation: Putting the Patient First in Clinical Trial Design</h1>
+                        <p class="text-start px-2">Learn how White And Trust is making clinical trials more patient-friendly with easier enrollment, focus on patient experience, and data return initiatives.White And Trust is transforming clinical trials by making them more patient-friendly and accessible. Traditional trials often involve complex enrollment and limited patient engagement, creating barriers to participation. To address this, White And Trust has simplified enrollment, making it easier for individuals to join trials.
 
                           A strong focus on patient experience ensures continuous support, clear communication, and improved engagement throughout the trial process. Additionally, the company’s data return initiatives allow patients to access their own health data, fostering transparency and trust.
                         </p>
@@ -530,8 +537,8 @@
                     <div class="col-lg-12 col-sm-12 rounded-1 p-5" style="background-color: rgba(0, 40, 255, .4);">
                         <h1 class="fw-bold text-white text-center">Sign up for investors newsletter</h1>
                         <p class="fw-bold text-white text-center mt-3 ">Stay up to date on financial results, corporate milestones and learn how we're delivering on our commitment to patients, our people and the planet.</p>
-                        <div class="text-center">
-                        <a class="wntbtn signbtn text-white mt-3 bg-warning rounded-0 montbold" href="contact_us.html" role="button" >Contact Us</a>
+                        <div class="text-center mx-auto">
+                        <a class="wntbtn signbtn text-center mx-auto mt-3 bg-warning rounded-0 montbold" href="contact_us.html" role="button" >Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -646,17 +653,28 @@
               loop: true,  // Infinite scrolling
               margin: 20,  // Space between items
               autoplay: true,  // Enables automatic scrolling
-              autoplayTimeout: 3000,  // Time between slides (3 seconds)
+              autoplayTimeout: 2000,  // Time between slides (3 seconds)
               autoplayHoverPause: true,  // Pause on hover
-              nav: false,  // Hide navigation arrows
+              nav: true,  // Hide navigation arrows
               dots: false,  // Hide navigation dots
+              rtl: true,
               responsive: {
-                  0: { items: 2 },  // 2 logos on small screens
+                  0: { items: 1 },  // 2 logos on small screens
                   600: { items: 3 },  // 3 logos on medium screens
                   1000: { items: 5 }  // 5 logos on large screens
               }
           });
       });
+      //   document.querySelector('#carouselExample').addEventListener('slide.bs.carousel', function (e) {
+      //     if (e.direction === 'left') {
+      //         e.relatedTarget.classList.add('carousel-item-end');
+      //         e.relatedTarget.classList.remove('carousel-item-start');
+      //     } else {
+      //         e.relatedTarget.classList.add('carousel-item-start');
+      //         e.relatedTarget.classList.remove('carousel-item-end');
+      //     }
+      // });
+
       </script>
       
 

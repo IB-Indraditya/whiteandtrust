@@ -24,10 +24,60 @@
 #navbar-content li{
     font-weight: bold;
 }
+
+.nav-link{
+    margin: auto 10px !important;
+}
 .carousel{
     margin: 0 auto;
     width: 100%;
 }
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.owl-prev, .owl-next {
+    background: rgba(0, 0, 0, 0) !important; /* Semi-transparent background */
+    color: darkslategray !important;
+    font-size: 40px !important;
+    border-radius: 50% !important;
+    width: 30px;
+    height: 30px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer;
+    padding: 10px !important;
+    font-weight: bold !important;
+}
+.owl-prev:hover, .owl-next:hover{
+    color: #b02a2a !important;
+}
+
+.owl-prev {
+    left: -50px; /* Move left */
+    transform: translate(30px, -15px);
+}
+
+.owl-next {
+    right: -50px; /* Move right */
+    transform: translate(0px, -15px);
+}
+
+.owl-prev:hover, .owl-next:hover {
+    background: black; /* Darker hover effect */
+}
+@media(max-width: 450px){
+    .owl-stage-outer{
+        overflow-x: scroll !important;
+    }
+}
+
 .montnormal{
   font-family: "Montserrat", serif;
   font-optical-sizing: auto;
@@ -356,6 +406,28 @@ a{
     .location, .communicate{
         width: auto
     }
+    .contactnav, .careernav, .productnav{
+        padding: 1.25rem 0 !important;
+        padding-bottom: 0 !important;
+    }
+    .careernav h3, .careernav p, .careernav h3{
+        margin-top: 0 !important;
+    }
+    .col-lg-6 {
+        flex: 0 0 auto;
+        /* width: 50%; */
+        min-height: 0px !important;
+        max-height: none !important;
+    }
+    .product1h3{
+        display: none;
+    }
+    .productnav h3{
+        margin-top: 1.25rem !important;
+    }
+    .productnav p{
+        margin-top: 1.5rem !important;
+    }
 }
 .dropcontent{
     display: block;
@@ -400,7 +472,8 @@ a{
         overflow: hidden;
     }
     .navbar-brand{
-        padding: 30px !important;
+        padding: 20px 30px !important;
+        padding-right: 0px !important;
     }
     .navbar-toggler{
         margin: 0 20px;
@@ -415,6 +488,7 @@ a{
         color: white;
         border-bottom: dotted 2px grey;
         padding: 20px 0;
+        margin: auto !important;
     }
     .nav-link:hover{
         color: cornflowerblue;
