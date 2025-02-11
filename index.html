@@ -18,7 +18,31 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
+    <style>
+      .dropdn{
+        display: none;
+        position: absolute;
+        transform: translate(220px, -20px);
+        z-index: 1000;
+        width: 150px;
+        /* border-radius: 4px; */
+        box-shadow: 0 0 2px .1px grey;
+      }
+      .dropdn p{
+        font-size:small;
+        color: darkslategray;
+        font-weight: bold;
+        background-color: white;
+        margin: 0 auto;
+        padding: 2px 15px;
+      }
+      .drops:hover .dropdn{
+        display: block;
+      }
+      .drops p:hover{
+        color: #b02a2a;
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
@@ -130,14 +154,14 @@
                     <section class="dropcontent">
                       <span class="dropbr bg-light"></span>
                       <div class="dropdown bg-light px-3">
-                        <a href="dryeyemgmt.html">
-                          <!-- <p class="drop">Dry Eye Management</p>
-                          <div class="dropdn d-block">
-                            <a href="">dropdndrop1</a>
-                            <a href="">dropdndrop1</a>
-                            <a href="">dropdndrop1</a>
-                            <a href="">dropdndrop1</a>
-                          </div> -->
+                        <a class="drops" href="dryeyemgmt.html">
+                          <p class="drop">Dry Eye Management</p>
+                          <div class="dropdn">
+                            <p>Aquastay</p>
+                            <p>Mytear</p>
+                            <p>Osmotear</p>
+                            <p>Osmotear-Ds</p>
+                          </div>
                         </a>
                         <a href="antiallergic.html"><p class="drop">Anti-Allergic </p></a>
                         <a href="antiaviral.html"><p class="drop">Anti-Viral </p></a>

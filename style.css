@@ -441,14 +441,15 @@ a{
     position: absolute;*/
     box-shadow: 0 0 4px 0px grey;
     max-height: 0;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
+    display: none;
     transition: 1s ease-in-out;
 }
 .dropdown .drop{
     margin: auto;
     font-size: small;
     padding: 5px 10px;
-    width: 250px;
+    width: 230px;
     color: darkslategrey;
 }
 .dropbr{
@@ -456,6 +457,29 @@ a{
     display: block;
     padding: 10px;
 }
+.dropdn{
+    display: none;
+    position: absolute;
+    transform: translate(220px, -20px);
+    z-index: 1000;
+    width: 150px;
+    /* border-radius: 4px; */
+    box-shadow: 0 0 2px .1px grey;
+  }
+  .dropdn p{
+    font-size:small;
+    color: darkslategray;
+    font-weight: bold;
+    background-color: white;
+    margin: 0 auto;
+    padding: 2px 15px;
+  }
+  .drops:hover .dropdn{
+    display: block;
+  }
+  .drops p:hover{
+    color: #b02a2a;
+  }
 @media(max-width: 1200px){
     .dropbr{
         visibility: collapse;
@@ -534,6 +558,7 @@ a[href="contact_us.html"]{
 .drophead:hover .dropdown{
     box-shadow: 0 0 2px .1px grey;
     max-height: 400px;
+    display: block;
     transition: 1s max-height ease-in-out;
 }
 /* Center the heading */

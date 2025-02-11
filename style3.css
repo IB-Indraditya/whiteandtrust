@@ -387,6 +387,29 @@ a{
     display: block;
     padding: 10px;
 }
+.dropdn{
+    display: none;
+    position: absolute;
+    transform: translate(220px, -20px);
+    z-index: 1000;
+    width: 150px;
+    /* border-radius: 4px; */
+    box-shadow: 0 0 2px .1px grey;
+  }
+  .dropdn p{
+    font-size:small;
+    color: darkslategray;
+    font-weight: bold;
+    background-color: white;
+    margin: 0 auto;
+    padding: 2px 15px;
+  }
+  .drops:hover .dropdn{
+    display: block;
+  }
+  .drops p:hover{
+    color: #b02a2a;
+  }
 @media(max-width: 1200px){
     .dropbr{
         visibility: collapse;
