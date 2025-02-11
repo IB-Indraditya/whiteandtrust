@@ -32,6 +32,37 @@
           .product-section:hover {
             transform: scale(1.02);
           }
+          @media (max-width: 800px){
+            .pdet{
+              flex-direction: column;
+            }
+            .pdet h3{
+              padding-bottom: 0 !important;
+            }
+            .pdet p{
+              padding-top: 0 !important;
+              margin-top: 0 !important;
+              overflow-wrap: anywhere;
+            }
+          }
+          @media (max-width: 500px){
+            .pdet{
+              flex-direction: column;
+              padding-left: 0 !important;
+              padding-right: 0 !important;
+            }
+            .pdet h3{
+              padding-bottom: 0 !important;
+              
+            }
+            .pdet p{
+              padding-top: 0 !important;
+              margin-top: 0 !important;
+              overflow-wrap: unset;
+              transform: scale(.7, .9);
+            }
+          }
+
         </style>
       </head>
 <body>
@@ -133,9 +164,9 @@
   </div> -->
 
   <div class="hero">
-    <div class="mt-2 pt-4 bg-dark text-white d-flex justify-content-between align-items-center px-5 w-100">
-        <h3 class="mt-5  pt-4 text-uppercase">Dry Eye Management</h3>
-        <p class="mt-5  pt-4 d-flex align-items-center"><a href="index.html">Home</a><i class="fa-solid fa-angle-right"></i><a href="product.html">Products</a><i class="fa-solid fa-angle-right"></i><span onclick="window.location.href='dryeyemgmt.html';" style="cursor: pointer;">Dry Eye Management</span></p>
+    <div class="mt-2 pt-4 bg-dark text-white d-flex justify-content-between align-items-center px-5 w-100 pdet">
+        <h3 class="mt-5 p-3 pt-4 text-uppercase">Dry Eye Management</h3>
+        <p class="mt-5 p-3 pt-4 d-flex align-items-center"><a href="index.html">Home</a> <i class="fa-solid fa-angle-right"></i> <a href="product.html">Products</a><i class="fa-solid fa-angle-right"></i><span onclick="window.location.href='dryeyemgmt.html';" style="cursor: pointer;">Dry&nbspEye&nbspManagement</span></p>
     </div>
   </div>
   <div class="hero">

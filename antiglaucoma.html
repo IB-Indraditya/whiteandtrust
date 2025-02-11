@@ -21,11 +21,48 @@
             font-size: 20px !important;
             color: #b02a2a;
           }
-          @media (max-width: 500px){
+          @media (max-width: 800px){
             .col-lg-6{
               min-height: 0 !important;
             }
           }
+          .product-section {
+            transition: transform 0.3s ease-in-out;
+          }
+          .product-section:hover {
+            transform: scale(1.02);
+          }
+          @media (max-width: 800px){
+            .pdet{
+              flex-direction: column;
+            }
+            .pdet h3{
+              padding-bottom: 0 !important;
+            }
+            .pdet p{
+              padding-top: 0 !important;
+              margin-top: 0 !important;
+              overflow-wrap: anywhere;
+            }
+          }
+          @media (max-width: 500px){
+            .pdet{
+              flex-direction: column;
+              padding-left: 0 !important;
+              padding-right: 0 !important;
+            }
+            .pdet h3{
+              padding-bottom: 0 !important;
+              
+            }
+            .pdet p{
+              padding-top: 0 !important;
+              margin-top: 0 !important;
+              overflow-wrap: unset;
+              transform: scale(.7, .9);
+            }
+          }
+
         </style>
       </head>
 <body>
@@ -98,30 +135,44 @@
       </div>
   </nav>
   </div>
-<!-- hero section -->
+
+
   <div class="hero">
-    <section class="bg-light py-4 w-100 mb-0">
-        <div class="mt-4 py-0 bg-dark text-white d-flex justify-content-between align-items-center px-5 productnav">
-            <h3 class="mt-5 p-3 text-uppercase"><span class="product1h3">Our</span> Products</h3>
-            <p class="mt-5 p-3"><a href="index.html">Home</a><i class="fa-solid fa-angle-right"></i> <span onclick="window.location.href='product.html';" style="cursor: pointer;"> Products</span></p>
-        </div>
-        <div class="container mt-5 w-100">
-          <h2 class="mt-5 mb-3 text-center">
-            Product Range
-          </h2>
-          <div class="container mt-4">
-    <div class="row align-items-center">
-      <div class="col-12 text-center py-4">
-        <p class="fw-bold m-4">Anti-Glaucoma Range</p>
-        <div class="d-flex flex-wrap gap-5">
-            <div class="item"><img src="images/product17.png" class="img-fluid" alt="GMERS"></div>
-            <div class="item"><img src="images/product18.png" class="img-fluid" alt="GMSCL"></div>
+    <div class="mt-2 pt-4 bg-dark text-white d-flex justify-content-between align-items-center px-5 w-100 pdet">
+        <h3 class="mt-5 p-3 pt-4 text-uppercase">Anti-Glaucoma Range</h3>
+        <p class="mt-5 p-3 pt-4 d-flex align-items-center"><a href="index.html">Home</a> <i class="fa-solid fa-angle-right"></i> <a href="product.html">Products</a><i class="fa-solid fa-angle-right"></i><span onclick="window.location.href='antiglaucoma.html';" style="cursor: pointer;">Anti-Glaucoma Range</span></p>
+    </div>
+  </div>
+  <div class="hero">
+    <section class="mt-4 mb-4">
+      <div class="container mb-5 p-5 bg-light shadow-lg rounded product-section">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center">
+            <img src="images/product17.png" class="img-fluid product-img rounded-3 shadow-sm" alt="Product 1">
+          </div>
+          <div class="col-md-6 mt-sm-2">
+            <h3 class="fw-bold text-danger">Product Name 1</h3>
+            <p class="text-muted">Description of the product goes here. It provides details about the product’s features and specifications.</p>
+          </div>
         </div>
       </div>
-    </div>
-</div>
-        </div>
     </section>
+    
+    
+    <section class="mt-4 mb-4">
+      <div class="container mb-5 p-5 bg-light shadow-lg rounded product-section">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center">
+            <img src="images/product18.png" class="img-fluid product-img rounded-3 shadow-sm" alt="Product 4">
+          </div>
+          <div class="col-md-6 mt-sm-2">
+            <h3 class="fw-bold text-danger">Product Name 4</h3>
+            <p class="text-muted">Description of the product goes here. It provides details about the product’s features and specifications.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
   </div>
 
   <!-- form -->
@@ -144,10 +195,15 @@
               </div>
               <div class="col-md-3">
                 <select class="form-select" required>
-                  <option selected disabled>Select Product</option>
-                  <option value="product1">Product 1</option>
-                  <option value="product2">Product 2</option>
-                  <option value="product3">Product 3</option>
+                  <option selected disabled >Select Your Product</option>
+                  <option value="product1">Dry Eye Management</option>
+                  <option value="product2">Anti-Aller ic</option>
+                  <option value="product3">Anti-Viral</option>
+                  <option value="product4">Antibiotic & Combinations</option>
+                  <option value="product5">Steroid</option>
+                  <option value="product6">Anti-Glaucoma Range</option>
+                  <option value="product7">Antioxidant</option>
+                  <option value="product8">NSAID Therapy</option>
                 </select>
               </div>
               <div class="col-12 text-center">
