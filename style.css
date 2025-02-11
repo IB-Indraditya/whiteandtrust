@@ -441,15 +441,15 @@ a{
     position: absolute;*/
     box-shadow: 0 0 4px 0px grey;
     max-height: 0;
-    /* overflow-y: hidden; */
-    display: none;
-    transition: 1s ease-in-out;
+    overflow-y: hidden;
+    /* display: none; */
+    transition: .5s ease-in-out;
 }
 .dropdown .drop{
     margin: auto;
     font-size: small;
     padding: 5px 10px;
-    width: 230px;
+    width: 250px;
     color: darkslategrey;
 }
 .dropbr{
@@ -550,7 +550,7 @@ a[href="contact_us.html"]{
     color: #b02a2a;;
 }
 .drophead:hover .dropcontent{
-    display: block;
+    /* display: block; */
     max-height: 400px;
     /* border: solid 1px grey; */
 
