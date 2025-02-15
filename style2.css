@@ -1,5 +1,5 @@
 .bgcontain{
-    background: url('https://indoreinstitute.com/wp-content/uploads/2020/03/Role-of-Pharmacists-in-the-Changing-Landscape-of-Healthcare.jpg');
+    background: url('images/bgcontain.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,7 +10,7 @@
     place-items: center;
 }
 .bginvest{
-    background: url('https://img.freepik.com/free-psd/interior-modern-emergency-room-with-empty-nurses-station-generative-ai_587448-2137.jpg?semt=ais_hybrid');
+    background: url('images/bginvest.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -108,7 +108,7 @@ p a{
     place-items: center;
 }
 .bgproductpg{
-    background: url('https://www.joinhubpharma.life/static/picture/pharma-manufacturer.jpg');
+    background: url('images/bgproduct.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
